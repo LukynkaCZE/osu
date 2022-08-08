@@ -135,7 +135,7 @@ namespace osu.Game.Screens.Menu
             buttonsTopLevel.Add(new MainMenuButton(ButtonSystemStrings.Play, @"button-play-select", OsuIcon.Logo, new Color4(102, 68, 204, 255), () => State = ButtonSystemState.Play, WEDGE_WIDTH,
                 Key.P));
             buttonsTopLevel.Add(new MainMenuButton(ButtonSystemStrings.Edit, @"button-edit-select", OsuIcon.EditCircle, new Color4(238, 170, 0, 255), () => OnEdit?.Invoke(), 0, Key.E));
-            buttonsTopLevel.Add(new MainMenuButton(ButtonSystemStrings.Browse, @"button-direct-select", OsuIcon.ChevronDownCircle, new Color4(165, 204, 0, 255), () => OnBeatmapListing?.Invoke(), 0,
+            buttonsTopLevel.Add(new MainMenuButton("Hi!", @"button-direct-select", FontAwesome.Brands.Twitter, new Color4(255, 163, 255, 255), () => OnBeatmapListing?.Invoke(), 0,
                 Key.D));
 
             if (host.CanExit)
